@@ -18,7 +18,7 @@
     <h2>Name: ${member.name()}</h2>
     <h2>Description: ${member.description()}</h2>
     <img src="<c:url value='/static/images/${member.selfiImageName()}' />"
-         alt="${member.name()}" width="400" height="400">
+         alt="${member.name()}" width="400">
 </c:forEach>
 </body>
 </html>
