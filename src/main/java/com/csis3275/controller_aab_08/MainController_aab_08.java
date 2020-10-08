@@ -1,6 +1,6 @@
 package com.csis3275.controller_aab_08;
 
-import com.csis3275.models_aab_08.TeamMember;
+import com.csis3275.models_aab_08.TeamMember_aab_08;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -19,8 +19,13 @@ public final class MainController_aab_08 {
      * List of members.
      */
     @Autowired
-    private List<TeamMember> members;
+    private List<TeamMember_aab_08> members;
 
+    /**
+     * Returns main page with group members.
+     * @param model Model
+     * @return Main page
+     */
     @GetMapping
     public String mainView(final Model model) {
         model.addAttribute("members", this.members);

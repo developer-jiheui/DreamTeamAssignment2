@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
  * Don't forget to add @{@link Component} annotation on your class
  */
 @Component
-public final class Almas_aab_08 implements TeamMember {
+public final class Almas_aab_08 implements TeamMember_aab_08 {
 
     @Override
     public String name() {
